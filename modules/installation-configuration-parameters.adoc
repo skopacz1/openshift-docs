@@ -2532,6 +2532,11 @@ When running your cluster on GCP 64-bit ARM infrastructures, ensure that you use
 Supported values are:
 
 * `Enabled`, which automatically selects a Confidential Computing platform
++
+[IMPORTANT]
+====
+The `Enabled` value selects Confidential Computing with AMD Secure Encrypted Virtualization (AMD SEV), which is deprecated.
+====
 * `Disabled`, which disables Confidential Computing
 * `AMDEncryptedVirtualizationNestedPaging`, which enables Confidential Computing with AMD Secure Encrypted Virtualization Secure Nested Paging (AMD SEV-SNP)
 * `AMDEncryptedVirtualization`, which enables Confidential Computing with AMD Secure Encrypted Virtualization (AMD SEV)
@@ -2659,6 +2664,11 @@ When running your cluster on GCP 64-bit ARM infrastructures, ensure that you use
 Supported values are:
 
 * `Enabled`, which automatically selects a Confidential Computing platform
++
+[IMPORTANT]
+====
+The `Enabled` value selects Confidential Computing with AMD Secure Encrypted Virtualization (AMD SEV), which is deprecated.
+====
 * `Disabled`, which disables Confidential Computing
 * `AMDEncryptedVirtualizationNestedPaging`, which enables Confidential Computing with AMD Secure Encrypted Virtualization Secure Nested Paging (AMD SEV-SNP)
 * `AMDEncryptedVirtualization`, which enables Confidential Computing with AMD Secure Encrypted Virtualization (AMD SEV)
@@ -2797,6 +2807,11 @@ When running your cluster on GCP 64-bit ARM infrastructures, ensure that you use
 Supported values are:
 
 * `Enabled`, which automatically selects a Confidential Computing platform
++
+[IMPORTANT]
+====
+The `Enabled` value selects Confidential Computing with AMD Secure Encrypted Virtualization (AMD SEV), which is deprecated.
+====
 * `Disabled`, which disables Confidential Computing
 * `AMDEncryptedVirtualizationNestedPaging`, which enables Confidential Computing with AMD Secure Encrypted Virtualization Secure Nested Paging (AMD SEV-SNP)
 * `AMDEncryptedVirtualization`, which enables Confidential Computing with AMD Secure Encrypted Virtualization (AMD SEV)

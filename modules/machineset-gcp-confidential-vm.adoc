@@ -59,6 +59,11 @@ endif::cpmso[]
 <1> Specify whether Confidential VM is enabled. The following values are valid:
 
 `Enabled`:: Enables Confidential VM with a default selection of Confidential VM technology. The default selection is AMD Secure Encrypted Virtualization (AMD SEV).
++
+[IMPORTANT]
+====
+The `Enabled` value selects Confidential Computing with AMD Secure Encrypted Virtualization (AMD SEV), which is deprecated.
+====
 
 `Disabled`:: Disables Confidential VM.
 
