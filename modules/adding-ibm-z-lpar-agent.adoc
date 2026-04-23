@@ -6,11 +6,14 @@
 [id="adding-ibm-z-lpar-agents_{context}"]
 = Adding {ibm-z-title} agents in a Logical Partition (LPAR)
 
-Use the following procedure to manually add {ibm-z-name} agents to your cluster that runs in an LPAR environment. Use this procedure only for {ibm-z-name} clusters running in an LPAR.
+[role="_abstract"]
+You can manually add {ibm-z-name} agents to your cluster that runs in an LPAR environment.
+
+Use this procedure only for {ibm-z-name} clusters running in an LPAR.
 
 .Prerequisites
 * You have Python 3 installed.
-* A running file server with access to the Logical Partition (LPAR).
+* You have a running file server with access to the Logical Partition (LPAR).
 
 .Procedure
 
@@ -33,16 +36,16 @@ zfcp.allow_lun_scan=0 \
 ai.ip_cfg_override=1 \
 random.trust_cpu=on rd.luks.options=discard
 ----
-<1> For the `coreos.live.rootfs_url` artifact, specify the matching `rootfs` artifact for the `kernel` and `initramfs` that you are starting. Only HTTP and HTTPS protocols are supported.
-<2> For the `ip` parameter, manually assign the IP address, as described in _Installing a cluster with z/VM on IBM Z and IBM LinuxONE_.
-<3> For installations on DASD-type disks, use `rd.dasd` to specify the DASD where {op-system-first} is to be installed. For installations on FCP-type disks, use `rd.zfcp=<adapter>,<wwpn>,<lun>` to specify the FCP disk where {op-system} is to be installed.
+* For the `coreos.live.rootfs_url` artifact, specify the matching `rootfs` artifact for the `kernel` and `initramfs` that you are starting. Only HTTP and HTTPS protocols are supported.
+* For the `ip` parameter, manually assign the IP address, as described in "Installing a cluster with z/VM on IBM Z and IBM LinuxONE".
+* For installations on DASD-type disks, use `rd.dasd` to specify the DASD where {op-system-first} is to be installed. For installations on FCP-type disks, use `rd.zfcp=<adapter>,<wwpn>,<lun>` to specify the FCP disk where {op-system} is to be installed.
 +
 [NOTE]
 ====
 For FCP multipath configurations, provide available multiple paths to the disk instead of a single path, and add `rd.multipath=default` to enable multipath during installation.
 ====
 +
-.Example 
+.Example
 [source,yaml]
 ----
 rd.zfcp=<adapter1>,<wwpn1>,<lun1> \
@@ -50,7 +53,7 @@ rd.zfcp=<adapter2>,<wwpn2>,<lun2> \
 rd.multipath=default
 ----
 +
-<4> To enable FIPS mode, specify `fips=1`. This entry is required in addition to setting the `fips` parameter to `true` in the `install-config.yaml` file.
+* To enable FIPS mode, specify `fips=1`. This entry is required in addition to setting the `fips` parameter to `true` in the `install-config.yaml` file.
 +
 [NOTE]
 ====

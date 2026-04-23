@@ -20,6 +20,7 @@ include::modules/installing-ocp-agent-iscsi-requirements.adoc[leveloffset=+1]
 * xref:../../installing/installing_with_agent_based_installer/preparing-to-install-with-agent-based-installer.adoc#agent-install-networking-DHCP_preparing-to-install-with-agent-based-installer[DHCP]
 * xref:../../installing/installing_with_agent_based_installer/preparing-to-install-with-agent-based-installer.adoc#root-device-hints_preparing-to-install-with-agent-based-installer[About root device hints]
 
+// Replace this section with modules/installing-ocp-agent-prereqs.adoc once #110558 is merged
 [id="prerequisites_{context}"]
 == Prerequisites
 
