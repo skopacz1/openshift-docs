@@ -48,7 +48,7 @@ random.trust_cpu=on
 * For the `coreos.live.rootfs_url` artifact, specify the matching `rootfs` artifact for the `kernel` and `initramfs` that you are booting. Only HTTP and HTTPS protocols are supported.
 
 * For installations on direct access storage devices (DASD) type disks, use `rd.` to specify the DASD where {op-system-first} is to be installed. For installations on Fibre Channel Protocol (FCP) disks, use `rd.zfcp=<adapter>,<wwpn>,<lun>` to specify the FCP disk where {op-system} is to be installed.
-* Specify values for `adapter`, `wwpn`, and `lun` as in the following example: `rd.zfcp=0.0.8002,0x500507630400d1e3,0x4000404600000000`.
+* Specify values for `<adapter>`, `<wwpn>`, and `<lun>` as in the following example: `rd.zfcp=0.0.8002,0x500507630400d1e3,0x4000404600000000`.
 --
 +
 [IMPORTANT]

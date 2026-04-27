@@ -13,8 +13,8 @@ The following procedures deploy a single-node {product-title} in a disconnected 
 
 For procedures that include optional customizations you can make while using the Agent-based Installer, see xref:../../installing/installing_with_agent_based_installer/installing-with-agent-based-installer.adoc#installing-with-agent-based-installer[Installing a cluster with customizations].
 
-// remove comment once main Agent CQA PR is merged
-// include::modules/installing-ocp-agent-prereqs.adoc[leveloffset=+1]
+
+include::modules/installing-ocp-agent-prereqs.adoc[leveloffset=+1]
 
 [role="_additional-resources"]
 .Additional resources

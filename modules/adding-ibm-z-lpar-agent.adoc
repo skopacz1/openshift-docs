@@ -26,12 +26,12 @@ Use this procedure only for {ibm-z-name} clusters running in an LPAR.
 rd.neednet=1 cio_ignore=all,!condev \
 console=ttysclp0 \
 ignition.firstboot ignition.platform.id=metal
-coreos.live.rootfs_url=http://<http_server>/rhcos-<version>-live-rootfs.<architecture>.img \// <1>
+coreos.live.rootfs_url=http://<http_server>/rhcos-<version>-live-rootfs.<architecture>.img \
 coreos.inst.persistent-kargs=console=ttysclp0 \
-ip=<ip>::<gateway>:<netmask>:<hostname>::none nameserver=<dns> \// <2>
+ip=<ip>::<gateway>:<netmask>:<hostname>::none nameserver=<dns> \
 rd.znet=qeth,<network_adaptor_range>,layer2=1
-rd.<disk_type>=<adapter> \// <3>
-fips=1 \// <4>
+rd.<disk_type>=<adapter> \
+fips=1 \
 zfcp.allow_lun_scan=0 \
 ai.ip_cfg_override=1 \
 random.trust_cpu=on rd.luks.options=discard
@@ -46,7 +46,7 @@ For FCP multipath configurations, provide available multiple paths to the disk i
 ====
 +
 .Example
-[source,yaml]
+[source,terminal]
 ----
 rd.zfcp=<adapter1>,<wwpn1>,<lun1> \
 rd.zfcp=<adapter2>,<wwpn2>,<lun2> \
